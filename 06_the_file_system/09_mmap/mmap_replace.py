@@ -2,7 +2,7 @@
 # @Author: Li Qin
 # @Date:   2020-02-21 16:17:20
 # @Last Modified by:   Li Qin
-# @Last Modified time: 2020-02-21 17:20:42
+# @Last Modified time: 2020-02-24 09:03:04
 import mmap
 import shutil
 import tempfile
@@ -35,5 +35,5 @@ with open(temp_file_path, 'r+') as f:
         m[loc:loc+len('World')] = name.encode()
         m.flush()
         print(f'After:\n{m.readline().rstrip()}')
-
+\
 cleanup(temp_file_path)
