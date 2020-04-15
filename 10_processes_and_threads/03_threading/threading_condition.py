@@ -2,7 +2,9 @@
 # @Author: Li Qin
 # @Date:   2020-04-13 09:33:19
 # @Last Modified by:   Li Qin
-# @Last Modified time: 2020-04-13 09:38:43
+# @Last Modified time: 2020-04-15 13:55:42
+# 10.3.9 Synchronizing Threads
+
 import logging
 import threading
 import time

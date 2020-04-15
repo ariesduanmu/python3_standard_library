@@ -2,7 +2,9 @@
 # @Author: Li Qin
 # @Date:   2020-04-11 17:20:16
 # @Last Modified by:   Li Qin
-# @Last Modified time: 2020-04-11 17:50:21
+# @Last Modified time: 2020-04-15 13:51:01
+# 10.3.2 Determining the Current Thread
+
 import threading
 import time
 import logging
