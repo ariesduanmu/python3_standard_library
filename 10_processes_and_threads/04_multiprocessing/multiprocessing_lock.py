@@ -2,9 +2,10 @@
 # @Author: Li Qin
 # @Date:   2020-04-17 10:53:58
 # @Last Modified by:   Li Qin
-# @Last Modified time: 2020-04-17 10:58:17
+# @Last Modified time: 2020-04-17 11:13:58
 # 10.4.12 Controlling Access to Resources
 
+# not work for windows
 import multiprocessing
 import sys
 
