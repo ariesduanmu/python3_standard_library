@@ -2,7 +2,7 @@
 # @Author: Li Qin
 # @Date:   2020-04-17 14:33:25
 # @Last Modified by:   Li Qin
-# @Last Modified time: 2020-04-17 14:47:02
+# @Last Modified time: 2020-04-22 11:17:06
 # 10.4.17 Process Pools
 
 # By default, Pool creates a fixed number of worker processes and 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     pool = multiprocessing.Pool(
         processes=pool_size,
         initializer=start_process,
-        maxtasksperchild=4
+        maxtasksperchild=3
     )
     pool_outputs = pool.map(do_calculation, inputs)
     pool.close()
