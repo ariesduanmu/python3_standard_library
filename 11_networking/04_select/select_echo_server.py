@@ -31,6 +31,11 @@ while inputs:
     # the second contains objects that will receive outgoing data when there is room in their buffer, 
     # and the third includes those objects that may have an error (usually a combination of the input and output channel objects). 
     readable, writable, exceptional = select.select(inputs, outputs, inputs)
+    
+    if not (readable or writable or exceptional):
+        print('  timed out, do some other work here', file=stderr)
+        continue
+
     for s in readable:
         if s is server:
             connection, client_address = s.accept()
